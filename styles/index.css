@@ -5,12 +5,12 @@ body {
 .main-container {
   padding: 0 21px;
   font-family: "Roboto";
-  max-width: 1600px;
-  margin: 0 auto;
+  /* max-width: 1600px;
+  margin: 0 auto; */
 }
 
 main {
-  padding-top: 112px;
+  padding-top: 7%;
 }
 
 .header {
@@ -21,16 +21,9 @@ main {
   align-items: center;
   background-color: white;
   position: fixed;
-  width: calc(100% - 42px);
-  max-width: calc(1600px - 42px);
+  width: calc(100vw - 42px);
   z-index: 1;
-}
-
-@media (width < 900px) {
-  .header {
-    flex-direction: column;
-    gap: 12px;
-  }
+  height: 14%;
 }
 
 .header__button {
@@ -64,6 +57,15 @@ main {
 .nav__item {
   font-size: 14px;
   font-weight: 400;
+}
+
+.logo--adaptive {
+  display: none;
+}
+
+.header__button--adaptive {
+  display: none;
+  padding: 12px;
 }
 
 .introduction {
@@ -172,6 +174,10 @@ main {
   line-height: 65px;
 }
 
+.products {
+  width: calc(100vw-42px);
+}
+
 .products__title-container {
   display: flex;
   justify-content: space-between;
@@ -187,20 +193,6 @@ main {
 
 .products__scorpio {
   height: 156px;
-}
-
-@media (width < 1000px) {
-  .products__title-container {
-    padding: 15px;
-  }
-
-  .products__title {
-    font-size: 35px;
-    line-height: 42px;
-  }
-  .products__scorpio {
-    height: 80px;
-  }
 }
 
 .products__scorpio--mirrored {
@@ -228,12 +220,17 @@ main {
 }
 
 .products__list li {
-  width: 32%;
   position: relative;
   background-image: url(../assets/icons/products-background.svg);
   background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
   padding: 22px;
+}
+
+.products__upper-pic {
+  top: 0;
 }
 
 .products__list li:nth-child(1) .products__upper-pic {
@@ -241,11 +238,13 @@ main {
 }
 
 .products__list li:nth-child(2) .products__upper-pic:nth-child(1) {
-  left: -10%;
+  left: -13%;
+  height: 88px;
 }
 
 .products__list li:nth-child(2) .products__upper-pic:nth-child(2) {
-  left: 97%;
+  left: 99%;
+  height: 88px;
 }
 
 .products__list li:nth-child(3) .products__upper-pic {
@@ -268,23 +267,6 @@ main {
   margin-bottom: 13px;
 }
 
-@media (width < 1200px) {
-  .products__list h3 {
-    font-size: 20px;
-    line-height: 25px;
-    letter-spacing: 0.5px;
-    font-weight: 400;
-    margin-bottom: 13px;
-  }
-  .products__list p {
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    line-height: 22px;
-    margin-top: 100px;
-    margin-bottom: 14px;
-  }
-}
-
 .running-line-container {
   padding: 26px 0;
   border: 1px solid black;
@@ -299,17 +281,6 @@ main {
     "pic pic"
     "title text"
     "women text";
-}
-
-@media (width < 1150px) {
-  .history__container {
-    grid-template-rows: 522px 227px 1fr;
-    grid-template-areas:
-      "pic pic"
-      "title title"
-      "women women"
-      "text text";
-  }
 }
 
 .history__main-picture {
@@ -348,6 +319,7 @@ main {
   padding: 135px 150px;
   display: flex;
   flex-direction: column;
+  align-items:center;
   gap: 22px;
 }
 

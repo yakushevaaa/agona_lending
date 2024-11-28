@@ -1,0 +1,195 @@
+/* @media (width < 900px) {
+  .header {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (width < 1000px) {
+  .products__title-container {
+    padding: 15px;
+  }
+
+  .products__title {
+    font-size: 35px;
+    line-height: 42px;
+  }
+  .products__scorpio {
+    height: 80px;
+  }
+}
+
+@media (width < 1200px) {
+  .products__list h3 {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    margin-bottom: 13px;
+  }
+  .products__list p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+    margin-top: 100px;
+    margin-bottom: 14px;
+  }
+}
+
+@media (width < 1150px) {
+  .history__container {
+    grid-template-rows: 522px 227px 1fr;
+    grid-template-areas:
+      "pic pic"
+      "title title"
+      "women women"
+      "text text";
+  }
+} */
+
+@media (width < 415px) {
+  .main-container {
+    padding: 0;
+  }
+
+  .header {
+    width: 100vw;
+    height: 18vh;
+  }
+
+  .header__button {
+    display: none;
+    justify-content: space-between;
+  }
+  .nav__item {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo--adaptive {
+    display: inline-block;
+  }
+
+  .header__button--adaptive {
+    display: inline;
+  }
+
+  .nav ul {
+    justify-content: center;
+  }
+
+  .introduction {
+    margin-top: 11vh;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "caption"
+      "line"
+      "picture"
+      "title"
+      "sauce";
+  }
+  .introduction__item {
+    justify-self: center;
+  }
+
+  .introduction__item:first-child {
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .introduction__item--running-line {
+    width: 100vw;
+  }
+
+  .introduction__item:nth-child(3),
+  .introduction__item:nth-child(5) {
+    padding: 12px;
+  }
+
+  .products__title {
+    font-size: 24px;
+    line-height: 32px;
+    white-space: nowrap;
+  }
+
+  .products__list-container {
+    border: none;
+  }
+  .products__title-container {
+    padding: 12px;
+  }
+
+  .products__scorpio {
+    width: 70px;
+    height: 48px;
+  }
+
+  .products__list {
+    width: 230vw;
+    /* overflow: hidden; */
+    overflow-x: scroll;
+    gap: 15px;
+    padding: 12px;
+  }
+
+  .products__list li {
+    width: 80vw;
+    height: 120vh;
+    padding: 0 22px;
+  }
+
+  .products__list p {
+    font-size: 17px;
+    line-height: 28px;
+    margin-top: 130px;
+    margin-bottom: 5px;
+  }
+
+  .products__list h3 {
+    font-size: 25px;
+    line-height: 38px;
+  }
+
+  .history__container {
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "pic"
+      "title"
+      "women"
+      "text";
+  }
+
+  .history__main-picture {
+    padding: 8px;
+  }
+
+  .history__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .history__text-container p {
+    font-size: 12px;
+    line-height: 12px;
+    white-space: nowrap;
+  }
+
+  .caption-container {
+    height: 50vh;
+  }
+
+  .caption-container__wrapper .caption {
+    width: 100vw;
+    height: 30vh;
+  }
+
+  .caption-container .caption__white-img,
+  .caption-container .caption__black-img {
+    left: 5%;
+    top: -18%;
+  }
+}
