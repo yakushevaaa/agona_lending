@@ -3,132 +3,273 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/adaptive.css" />
+    <title>Agona-lending</title>
   </head>
-  <body>
-    <header>
-      <button>Go back</button>
-      <nav>
-        <ul>
-          <li>
-            <a href="">Story</a>
-          </li>
-          <li>
-            <a href="">Shop</a>
-          </li>
-
-          <li>
-            <button></button>
-            <a href=""><img src="assets/icons/logo.svg" alt="" /></a>
-            <button></button>
-          </li>
-
-          <li>
-            <a href="">Contact</a>
-          </li>
-          <li>
-            <a href="">Wholesale</a>
-          </li>
-        </ul>
-      </nav>
-      <button>Clone</button>
-    </header>
-    <main>
-      <section>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div>
-          <h1>THE FIRST HOT SAUCE MADE FOR COFFEE</h1>
-        </div>
-        <div></div>
-      </section>
-      <section>
-        <div>
-          <h2>THROW SOME LAVA IN YOUR JAVA</h2>
-        </div>
-        <div>
+  <div class="main-container">
+    <body>
+      <header class="header">
+        <button class="header__button">Go back</button>
+        <button class="header__button header__button--adaptive">
+          <img class="header__pic" src="assets/icons/cross.svg" alt="" />
+        </button>
+        <nav class="nav">
           <ul>
-            <li>
-              <p>tangy and tingly</p>
-              <h3>LIGHT ROAST BLEND</h3>
-              <img src="assets/images/bottle.png" alt="Picture of sauce" />
+            <li class="nav__item">
+              <a href="">Story</a>
             </li>
-            <li>
-              <p>tangy and tingly</p>
-              <h3>LIGHT ROAST BLEND</h3>
-              <img
-                src="assets/images/catalog-bottles.png"
-                alt="Picture of sauce"
-              />
+            <li class="nav__item">
+              <a href="">Shop</a>
             </li>
-            <li>
-              <p>tangy and tingly</p>
-              <h3>LIGHT ROAST BLEND</h3>
-              <img src="assets/images/bottle.png" alt="Picture of sauce" />
+            <li class="nav__item-logo">
+              <a class="nav__link" href=""
+                ><img class="logo" src="assets/icons/logo.svg" alt="" />
+                <img
+                  class="logo logo--adaptive"
+                  src="assets/icons/logo-adaptive.svg"
+                  alt=""
+                />
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="">Contact</a>
+            </li>
+            <li class="nav__item">
+              <a href="">Wholesale</a>
             </li>
           </ul>
-        </div>
-        <div>
-          <p>PUT SOME FIRE IN YOUR BELLY</p>
-          <img src="assets/icons/pepper.svg" alt="Pepper icon" />
-        </div>
-      </section>
-      <section>
-        <div>
-          <picture>
-            <!-- <source srcset="large.jpg" media="(min-width: 1200px)" />
-            <source srcset="medium.jpg" media="(min-width: 768px)" />
-            <source srcset="small.jpg" media="(max-width: 767px)" /> -->
-            <img src="assets/images/history-pic.png" alt="Sauce picture" />
-          </picture>
-        </div>
-        <div>
-          <h2>THE STORY BEHIND THE SOUCE</h2>
-        </div>
-        <div>
-          <picture>
-            <!-- <source srcset="large.jpg" media="(min-width: 1200px)" />
-            <source srcset="medium.jpg" media="(min-width: 768px)" />
-            <source srcset="small.jpg" media="(max-width: 767px)" /> -->
-            <img src="assets/images/women-pic.png" alt="Women with souce" />
-          </picture>
-        </div>
-        <div>
-          <p>
-            HELLO, I’M LAUREN AND AS A LIFELONG ADVENTUROUS EATER, I’VE TRIED A
-            LOT OF CRAZY THINGS, BUT I NEVER THOUGHT HOT SAUCE IN COFFEE WAS A
-            SANE OPTION UNTIL A FRIEND DARED ME TO TRY IT.
-          </p>
-          <p>AND IT SUCKED.</p>
-          <p>
-            BUT I WONDERED IF THERE WAS A WAY TO ADD SPICE TO MY COFFEE. WHEN
-            THERE WAS NO EASY SOLUTION, UJJO WAS BORN.
-          </p>
-          <p>
-            UJJO (OOO-JOE): THE WORD FOR “FIRE” IN KONKANI, SPOKEN ON THE WEST
-            COAST OF INDIA, IS AN HOMAGE AND A LOVE LETTER TO MY DAD, AN INDIAN
-            IMMIGRANT WHO INSTILLED A FIRE IN MY PALATE – AND MY HEART – FROM
-            THE VERY BEGINNING.
-          </p>
-        </div>
-      </section>
-      <section>
-        <div>
-          <p>CONTACT FOR PARTNERSHIP OPPORTUNITIES</p>
-          <img src="assets/icons/pepper.svg" alt="Pepper icon" />
-        </div>
-        <div>
-          <!-- тут надпись через background-image -->
-        </div>
-      </section>
-    </main>
-    <footer>
-      <a href="" download>Privacy</a>
-      <address>
-        <p>ujjo llc, columbus oh, 43219</p>
-        <a href="">instagram</a>
-      </address>
-    </footer>
-  </body>
+        </nav>
+        <button class="header__button">Clone</button>
+        <button class="header__button header__button--adaptive">
+          <img class="header__pic" src="assets/icons/group.svg" alt="" />
+        </button>
+      </header>
+      <main>
+        <section class="introduction">
+          <div class="introduction__item">
+            <div class="caption">
+              <img
+                class="caption__black-img"
+                src="assets/icons/black-letter.svg"
+                alt=""
+              />
+              <img
+                class="caption__white-img"
+                src="assets/icons/white-letter.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="introduction__item introduction__item--running-line">
+            <div class="running-line">
+              <p>put some fire in your belly</p>
+              <img src="assets/icons/pepper.svg" alt="" />
+              <p>put some fire in your belly</p>
+              <img src="assets/icons/pepper.svg" alt="" />
+              <p>put some fire in your belly</p>
+              <img src="assets/icons/pepper.svg" alt="" />
+            </div>
+          </div>
+          <div class="introduction__item">
+            <img
+              class="container-pic"
+              src="assets/images/banner-pic-left.png"
+              alt=""
+            />
+          </div>
+
+          <div class="introduction__item">
+            <h1 class="introduction__title title">
+              THE FIRST HOT <br />
+              SAUCE MADE FOR <br />COFFEE
+            </h1>
+          </div>
+          <div class="introduction__item">
+            <img
+              class="introduction__pic"
+              src="assets/images/banner-pic-right.png"
+              alt=""
+            />
+          </div>
+        </section>
+        <section class="products">
+          <div class="products__title-container">
+            <img
+              class="products__scorpio"
+              src="assets/images/scorpio.png"
+              alt=""
+            />
+            <h2 class="products__title title">
+              THROW SOME LAVA IN <br />
+              YOUR JAVA
+            </h2>
+            <img
+              class="products__scorpio products__scorpio--mirrored"
+              src="assets/images/scorpio.png"
+              alt=""
+            />
+          </div>
+          <div class="products__list-container">
+            <ul class="products__list">
+              <li>
+                <img
+                  class="products__upper-pic"
+                  src="assets/icons/fire-circle-icon.svg"
+                  alt=""
+                />
+                <p>tangy and tingly</p>
+                <h3>LIGHT ROAST BLEND</h3>
+                <img src="assets/images/bottle.png" alt="Picture of sauce" />
+              </li>
+              <li>
+                <img
+                  class="products__upper-pic"
+                  src="assets/icons/fire-oval-icon.svg"
+                  alt=""
+                />
+                <img
+                  class="products__upper-pic"
+                  src="assets/icons/fire-oval-icon.svg"
+                  alt=""
+                />
+                <p>light & dark roast</p>
+                <h3>LIGHT ROAST BLEND</h3>
+                <img
+                  src="assets/images/catalog-bottles.png"
+                  alt="Picture of sauce"
+                />
+              </li>
+              <li>
+                <img
+                  class="products__upper-pic"
+                  src="assets/icons/fire-circle-icon.svg"
+                  alt=""
+                />
+                <p>tangy and tingly</p>
+                <h3>LIGHT ROAST BLEND</h3>
+                <img src="assets/images/bottle.png" alt="Picture of sauce" />
+              </li>
+            </ul>
+          </div>
+          <div class="running-line-container">
+            <div class="running-line">
+              <p>put some fire in your belly</p>
+              <img src="assets/icons/pepper.svg" alt="" />
+              <p>put some fire in your belly</p>
+              <img src="assets/icons/pepper.svg" alt="" />
+              <p>put some fire in your belly</p>
+              <img src="assets/icons/pepper.svg" alt="" />
+              <p>put some fire in your belly</p>
+              <img src="assets/icons/pepper.svg" alt="" />
+              <p>put some fire in your belly</p>
+              <img src="assets/icons/pepper.svg" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="history">
+          <div class="history__container">
+            <div class="history__main-picture">
+              <img
+                class="container-pic history__main-img"
+                src="assets/images/history-pic.png"
+                alt="Sauce picture"
+              />
+            </div>
+            <div class="history__title">
+              <h2 class="title">
+                THE STORY BEHIND <br />
+                THE SOUCE
+              </h2>
+            </div>
+            <div class="history__left-picture">
+              <img
+                class="container-pic"
+                src="assets/images/history-left-pic.png"
+                alt="Women with souce"
+              />
+            </div>
+            <div class="history__text">
+              <div class="history__text-container">
+                <p>
+                  HELLO, I’M LAUREN AND AS A LIFELONG <br />
+                  ADVENTUROUS EATER, I’VE TRIED A LOT OF <br />CRAZY THINGS, BUT
+                  I NEVER THOUGHT HOT <br />
+                  SAUCE IN COFFEE WAS A SANE OPTION <br />
+                  UNTIL A FRIEND DARED ME TO TRY IT.
+                </p>
+
+                <p>AND IT SUCKED.</p>
+
+                <p>
+                  BUT I WONDERED IF THERE WAS A WAY TO <br />
+                  ADD SPICE TO MY COFFEE. WHEN THERE <br />
+                  WAS NO EASY SOLUTION, UJJO WAS BORN.
+                </p>
+
+                <p>
+                  UJJO (OOO-JOE): THE WORD FOR “FIRE” IN <br />
+                  KONKANI, SPOKEN ON THE WEST COAST OF <br />
+                  INDIA, IS AN HOMAGE AND A LOVE LETTER <br />
+                  TO MY DAD, AN INDIAN IMMIGRANT WHO <br />
+                  INSTILLED A FIRE IN MY PALATE – AND MY <br />
+                  HEART – FROM THE VERY BEGINNING.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="label">
+          <div class="running-line-container">
+            <div class="running-line">
+              <p>CONTACT FOR PARTNERSHIP OPPORTUNITIES</p>
+              <img src="assets/icons/pepper.svg" alt="Pepper icon" />
+              <p>DOWNLOAD OUR MEDIA KIT</p>
+              <img src="assets/icons/pepper.svg" alt="Pepper icon" />
+              <p>CONTACT FOR PARTNERSHIP OPPORTUNITIES</p>
+              <img src="assets/icons/pepper.svg" alt="Pepper icon" />
+              <p>DOWNLOAD OUR MEDIA KIT</p>
+              <img src="assets/icons/pepper.svg" alt="Pepper icon" />
+            </div>
+          </div>
+
+          <div class="caption-container">
+            <img
+              class="caption-container__bg-fire"
+              src="assets/icons/fire-background-green.svg"
+              alt=""
+            />
+            <div class="caption-container__wrapper">
+              <img
+                class="caption-container__bg-line"
+                src="./assets/icons/bg-line.svg"
+                alt=""
+              />
+              <div class="caption">
+                <img
+                  class="caption__black-img"
+                  src="assets/icons/black-letter.svg"
+                  alt=""
+                />
+                <img
+                  class="caption__white-img"
+                  src="assets/icons/white-letter.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <a class="footer__link" href="" download>Privacy</a>
+        <address class="footer__address">ujjo llc, columbus oh, 43219</address>
+        <a class="footer__contacts" href="">instagram</a>
+      </footer>
+    </body>
+  </div>
 </html>
