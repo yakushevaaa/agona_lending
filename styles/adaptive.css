@@ -60,6 +60,12 @@
     padding: 12px;
   }
 
+  .introduction__title {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 0;
+  }
+
   .products__title {
     font-size: 2.4rem;
     line-height: 32px;
@@ -79,7 +85,7 @@
   }
 
   .products__list {
-    width: 230vw;
+    width: 253vw;
     /* overflow: hidden; */
     overflow-x: scroll;
     gap: 15px;
@@ -88,7 +94,7 @@
 
   .products__list li {
     width: 80vw;
-    height: 120vh;
+    height: 81vh;
     padding: 0 22px;
   }
 
@@ -119,6 +125,10 @@
   }
 
   .history__title {
+    padding: 20px;
+  }
+
+  .history__title h2 {
     font-size: 2.4rem;
     line-height: 32px;
   }
@@ -130,7 +140,7 @@
   }
 
   .caption-container {
-    height: 50vh;
+    height: 40vh;
   }
 
   .caption-container__wrapper .caption {
@@ -141,6 +151,6 @@
   .caption-container .caption__white-img,
   .caption-container .caption__black-img {
     left: 5%;
-    top: -18%;
+    top: 0;
   }
 }

@@ -1,5 +1,22 @@
 :root {
   --primary-button-color: #fb4b4d;
   --secondary-button-color: #8b83f6;
-  --background-color: rgba(205, 253, 59, 1);
+  --fire-bg-color: rgba(205, 253, 59, 1);
+  --background-color: white;
+  --text-color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #0d142e;
+    --text-color: white;
+  }
+
+  .running-line img,
+  .products__scorpio,
+  .products__scorpio--mirrored,
+  .products__upper-pic,
+  .caption-container__bg-line {
+    filter: invert(1);
+  }
 }
