@@ -16,7 +16,8 @@
   .products__scorpio,
   .products__scorpio--mirrored,
   .products__upper-pic,
-  .caption-container__bg-line {
+  .caption-container__bg-line,
+  .logo--adaptive {
     filter: invert(1);
   }
 }

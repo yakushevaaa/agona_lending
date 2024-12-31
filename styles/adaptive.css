@@ -94,7 +94,7 @@
 
   .products__list li {
     width: 80vw;
-    height: 81vh;
+    height: 80vh;
     padding: 0 22px;
   }
 
@@ -140,7 +140,7 @@
   }
 
   .caption-container {
-    height: 40vh;
+    height: 37vh;
   }
 
   .caption-container__wrapper .caption {
